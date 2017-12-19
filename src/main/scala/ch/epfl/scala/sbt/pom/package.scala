@@ -1,4 +1,4 @@
-package com.typesafe.sbt
+package ch.epfl.scala.sbt
 
 import org.apache.maven.repository.internal.MavenRepositorySystemUtils
 import org.eclipse.aether.RepositorySystem

@@ -1,9 +1,6 @@
 name := "sbt-pom-reader"
-
-organization := "com.typesafe.sbt"
-
+organization := "ch.epfl.scala"
 licenses += ("Apache-2.0", url("http://opensource.org/licenses/Apache-2.0"))
-
 sbtPlugin := true
 
 val mvnVersion = "3.5.2"
@@ -26,7 +23,7 @@ libraryDependencies ++= Seq(
 ) ++ mvnEmbedderDeps
 
 initialCommands in console :=
-  """| import com.typesafe.sbt.pom._
+  """| import ch.epfl.scala.sbt.pom._
      | import sbt._
      | val localRepo = file(sys.props("user.home")) / ".m2" / "repository"
      | val pomFile = file("src/sbt-test/simple-pom/can-extract-basics/pom.xml")
